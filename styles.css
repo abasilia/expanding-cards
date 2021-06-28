@@ -35,6 +35,7 @@ body {
 .panel h3 {
   font-size: 24px;
   text-align: center;
+  padding-top: 50px;
 
   margin: 0;
   writing-mode: vertical-rl;
@@ -48,5 +49,6 @@ body {
 .panel.active h3 {
   writing-mode: horizontal-tb;
   transition: writing-mode 0.5s ease-in 0.4s;
+  padding: 10px;
   
 }
