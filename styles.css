@@ -3,9 +3,9 @@
 }
 
 body {
-  font-family:  sans-serif;
+  font-family: sans-serif;
   display: flex;
-  
+
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -15,39 +15,38 @@ body {
 
 .container {
   display: flex;
-  width: 90vw;
-  
+  width: 95vw;
 }
 
-.panel{
+.panel {
   background-image: auto;
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 50px;
-  color:black;
+  color: black;
   cursor: pointer;
-  flex: 0.5;
+  flex: 0.3;
   margin: 10px;
   position: relative;
   transition: flex 0.7s ease-in;
-  
 }
 
 .panel h3 {
   font-size: 24px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
+  text-align: center;
+
   margin: 0;
-  opacity: 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
 .panel.active {
-  flex: 8;
+  flex: 5;
 }
 
 .panel.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+  writing-mode: horizontal-tb;
+  transition: writing-mode 0.5s ease-in 0.4s;
+  
 }
