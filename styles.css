@@ -29,7 +29,7 @@ body {
   flex: 0.3;
   margin: 10px;
   position: relative;
-  transition: flex 0.7s ease-in;
+  transition: flex 0.7s ease-in-out;
 }
 
 .panel h3 {
@@ -43,12 +43,11 @@ body {
 }
 
 .panel.active {
-  flex: 5;
+  flex: 7;
 }
 
 .panel.active h3 {
   writing-mode: horizontal-tb;
-  transition: writing-mode 0.5s ease-in 0.4s;
+  transition: 0.5s ease-in-out;
   padding: 10px;
-  
 }
